@@ -29,6 +29,8 @@ uint32_t doubleIntToFloat(const int significand, const uint32_t decimal){
 		return 0;
 	}
 
+	if( significant == 0 && decimal == 0 ) return 0;	////Zero case
+
 	///Due to the way computers work, the significant bits are already known,
 	//however the decimal bits are not.
 
